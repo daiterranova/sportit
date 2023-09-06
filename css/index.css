@@ -12,7 +12,8 @@ h1 {
     font-size: 3rem;
 }
 h2 {
-    font-size: 2.5rem;
+    color: #FFF;
+    font-size: 2.15rem;
 }
 /* Header */
 .header {
@@ -73,7 +74,7 @@ h2 {
     width: 450px;
 }
 .article-argument p {
-    line-height: 1.5em;
+    line-height: 1.75rem;
 }
 .flex {
     display: flex;
@@ -181,6 +182,8 @@ button {
         margin-top: 50px;
     }
     .article-argument {
+        background: #3CDDF3;
         flex-direction: column;
+        gap: 50px
     }
 }
