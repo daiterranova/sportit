@@ -7,9 +7,60 @@
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
-h2 {
-    font-size: 2.25em;
+h1 {
+    color: #232C50;
+    font-size: 3rem;
 }
+h2 {
+    font-size: 2.5rem;
+}
+/* Header */
+.header {
+    padding: 3em;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-menu li {
+    margin: 0 10px;
+    list-style: none;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: #242E52;
+}
+.nav-menu a:hover {
+    color: rgba(36, 46, 82, 0.60);
+}
+.nav-menu {
+    display: flex;
+}
+.nav-menu-mobile {
+    display: none;
+}
+/* End Header */
+/* Hero section */
+.hero-section {
+    margin: 100px 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.hero-section-img img {
+    width: 100%;
+}
+.hero-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 28px;
+    max-width: 450px;
+}
+/* End hero section */
+/* Article argument */
 .article-argument {
     display: flex;
     justify-content: center;
@@ -24,5 +75,112 @@ h2 {
 .article-argument p {
     line-height: 1.5em;
 }
+.flex {
+    display: flex;
+}
+button {
+    background-color: #8b48bf;
+    color: #FFF;
+    border: none;
+    padding: 0.625rem;
+    border-radius: 50px;
+    height: 44px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+}
+.button-regular {
+    width: 134px;
+}
+.button-small {
+    width: 63px;
+}
+
+.article-call-action {
+    width: 100%;
+    background: #8b48bf;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.call-action-title {
+    color: #ffffff;
+    width: 35%;
+    font-size: 2.5rem;
+}
+.call-action-button {
+    background: #ffffff;
+}
+.call-action-button a {
+    text-decoration: none;
+    color: #8b48bf;
+}
+
+/* Motives section */
+.motives-section{
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding: 2.5rem 0;
+    gap:1.5rem;
+}
+.motives-article{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+    padding: 1rem;
+}
+.motives-heading{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.motives-number{
+    padding:  0.625rem 1.5rem;
+    border-radius: 3.125rem;
+}
+.motives-article p{
+   align-self: end;
+   width:68%;
+   color: #B3B2B7;
+   font-weight: 400;
+   font-size: 0.98rem;
+
+}
+.motives-title{
+    font-weight: 700;
+    color: #323851;
+}
+
+
+/* extraer de button estas props */
+.primary{
+    background-color: #8b48bf;
+    color: #FFF;
+}
 @media screen and (max-width: 480px)  {
+    .header {
+        padding: 2.5em;
+    }
+    .header-nav {
+        justify-content: space-between;
+    }
+    .nav-menu, .nav-button {
+        display: none;
+    }
+    .nav-menu-mobile {
+        display:inherit;
+    }
+    .hero-section {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .article-argument {
+        flex-direction: column;
+    }
 }
