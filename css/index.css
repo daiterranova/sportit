@@ -99,6 +99,54 @@ button {
     color: #8b48bf;
 }
 
+/* Motives section */
+.motives-section{
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding: 2.5rem 0;
+    gap:1.5rem;
+}
+.motives-article{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+    padding: 1rem;
+}
+.motives-heading{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.motives-number{
+    padding:  0.625rem 1.5rem;
+    border-radius: 3.125rem;
+}
+.motives-article p{
+   align-self: end;
+   width:68%;
+   color: #B3B2B7;
+   font-weight: 400;
+   font-size: 0.98rem;
+
+}
+.motives-title{
+    font-weight: 700;
+    color: #323851;
+}
+
+
+/* extraer de button estas props */
+.primary{
+    background-color: #8b48bf;
+    color: #FFF;
+}
 @media screen and (max-width: 480px)  {
     .header {
         padding: 2.5em;
