@@ -45,6 +45,9 @@ h1 {
     justify-content: space-around;
     align-items:center;
 }
+.flex {
+    display: flex;
+}
 .hero-section-img img {
     width: 100%;
 }
@@ -60,38 +63,40 @@ h1 {
 
 
 button {
-  border: none;
-  padding: 0.625rem;
-  border-radius: 50px;
-  height: 44px;
-  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    background-color: #8b48bf;
+    color: #FFF;
+    border: none;
+    padding: 0.625rem;
+    border-radius: 50px;
+    height: 44px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
 }
 .button-regular {
-  width: 134px;
+    width: 134px;
 }
 .button-small {
-  width: 63px;
+    width: 63px;
 }
 
 .article-call-action {
-  width: 100%;
-  background: #8b48bf;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 2rem;
+    width: 100%;
+    background: #8b48bf;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
 }
 .call-action-title {
-  color: #ffffff;
-  width: 35%;
-  font-size: 2.5rem;
+    color: #ffffff;
+    width: 35%;
+    font-size: 2.5rem;
 }
 .call-action-button {
-  background: #ffffff;
+    background: #ffffff;
 }
 .call-action-button a {
-  text-decoration: none;
-  color: #8b48bf;
+    text-decoration: none;
+    color: #8b48bf;
 }
 
 @media screen and (max-width: 480px)  {
