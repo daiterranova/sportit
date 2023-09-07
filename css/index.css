@@ -188,11 +188,87 @@ button:hover {
     color: #323851;
 }
 
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background:#1E1E26 ;
+    color: #8C8C94;
+    height:12rem;
+
+}
+/* revisar cambiar color svg logo footer */
+.logo-nav-icons-container img{
+    fill:#fff; 
+    width:70%
+}
 
 /* extraer de button estas props */
 .primary{
     background-color: #8b48bf;
     color: #FFF;
+}
+.footer-nav {
+    list-style:none;
+    padding: 0;
+    /* margin: 0; */
+}
+.footer-nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+.logo-nav-icons-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:1rem;
+    width: 10%;
+  
+}
+.nav-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:start ;
+    gap: 1rem;
+}
+
+footer nav{
+    padding-top: 1.5rem;
+}
+.form-credits-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 22%;
+}
+form{
+    display: flex;
+    gap: 1rem;
+   justify-content: end;
+}
+form input{
+    width: 70%;
+    padding: 0.625rem;
+    border-radius: 3.125rem;
+    text-align: start;
+    border: none;
+}
+.form-credits-container span{
+    display: flex;
+    font-size: 0.78rem;
+    color: #8C8C94;
+    font-weight: 400;
+    align-self: end;
 }
 @media screen and (max-width: 480px)  {
     .header {
