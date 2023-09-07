@@ -6,13 +6,12 @@
 }
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
+    color: #232C50;
 }
 h1 {
-    color: #232C50;
     font-size: 3rem;
 }
 h2 {
-    color: #FFF;
     font-size: 2.15rem;
 }
 /* Header */
@@ -68,7 +67,7 @@ h2 {
     background: #8B48BF;
     color: #FFF;
     gap: 100px;
-    padding: 40px 0;
+    padding: 2.5rem 1rem;
 }
 .article-argument * {
     width: 450px;
@@ -87,6 +86,9 @@ button {
     border-radius: 50px;
     height: 44px;
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+}
+button:hover {
+    background: rgba(139, 72, 191, 0.70);
 }
 .button-regular {
     width: 134px;
@@ -115,7 +117,35 @@ button {
     text-decoration: none;
     color: #8b48bf;
 }
-
+/* Article best */
+.article-best {
+    text-align: center;
+    padding-bottom:12rem ;
+}
+.article-best h2 {
+    padding: 6rem 1rem;
+}
+.cards-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    background-color: #fafafa;
+    margin-bottom: 4rem;
+}
+.card img {
+    position: relative;
+    top: -35px;
+}
+.card p {
+    padding: 1.6rem;
+    color: #B9B9C1;
+}
+/* end article best */
 /* Motives section */
 .motives-section{
     background: #FAFAFA;
@@ -184,6 +214,16 @@ button {
     .article-argument {
         background: #3CDDF3;
         flex-direction: column;
-        gap: 50px
+        gap: 50px;
+    }
+    .article-argument * {
+        width: 100%;
+    }
+    .card:nth-child(1), .card:nth-child(3)  {
+        display: none;
+    }
+    .article-best {
+        padding-bottom: 5rem ;
+        margin: 1rem;
     }
 }
