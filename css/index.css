@@ -88,6 +88,7 @@ button {
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
 }
 button:hover {
+    cursor: pointer;
     background: rgba(139, 72, 191, 0.70);
 }
 .button-regular {
@@ -116,6 +117,10 @@ button:hover {
 .call-action-button a {
     text-decoration: none;
     color: #8b48bf;
+}
+.call-action-button:hover{
+    background: hsla(0, 0%, 98%,0.9);
+
 }
 /* Article best */
 .article-best {
@@ -287,13 +292,24 @@ form input{
         flex-direction: column;
         margin-top: 50px;
     }
-    .article-argument {
+    .article-argument , .article-call-action{
         background: #3CDDF3;
         flex-direction: column;
         gap: 50px;
     }
+    .call-action-title{
+        width: 100%;
+        text-align: center;
+    }
+   
     .article-argument * {
         width: 100%;
+    }
+    .call-action-button{
+        background: #232C50;
+    }
+    .call-action-button a{
+        color: #FFF;
     }
     .card:nth-child(1), .card:nth-child(3)  {
         display: none;
