@@ -30,9 +30,23 @@ h2 {
 .nav-menu a {
     text-decoration: none;
     color: #242E52;
+    position: relative;
 }
 .nav-menu a:hover {
     color: rgba(36, 46, 82, 0.60);
+}
+.nav-menu a::after {
+    content: "";
+    border-bottom: 5px solid #8B48BF;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.nav-menu a:hover::after {
+    opacity: 1;
 }
 .nav-menu {
     display: flex;
