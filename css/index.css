@@ -169,7 +169,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 1.1rem;
-    padding: 1rem;
+    padding-left: 1rem;
 }
 .motives-heading{
     display: flex;
@@ -317,5 +317,18 @@ form input{
     .article-best {
         padding-bottom: 5rem ;
         margin: 1rem;
+    }
+    .motives-section{
+        flex-direction: column;
+    }
+    .motives-article, .motives-heading{
+        width: 100%;
+    }
+    .motives-heading{
+        background: rgba(139, 72, 191, 0.30); 
+        border-radius: 40px 0 0 40px;
+    }
+    .motives-article p{
+        align-self: center;
     }
 }
