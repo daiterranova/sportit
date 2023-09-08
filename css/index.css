@@ -88,13 +88,14 @@ button {
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
 }
 button:hover {
+    cursor: pointer;
     background: rgba(139, 72, 191, 0.70);
 }
 .button-regular {
     width: 134px;
 }
 .button-small {
-    width: 63px;
+    min-width: 63px;
 }
 
 .article-call-action {
@@ -116,6 +117,10 @@ button:hover {
 .call-action-button a {
     text-decoration: none;
     color: #8b48bf;
+}
+.call-action-button:hover{
+    background: hsla(0, 0%, 98%,0.9);
+
 }
 /* Article best */
 .article-best {
@@ -164,7 +169,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 1.1rem;
-    padding: 1rem;
+    padding-left: 1rem;
 }
 .motives-heading{
     display: flex;
@@ -191,18 +196,10 @@ button:hover {
 /* footer */
 
 footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
+    padding: 3rem 8rem;
     background:#1E1E26 ;
     color: #8C8C94;
-    height:12rem;
-
-}
-/* revisar cambiar color svg logo footer */
-.logo-nav-icons-container img{
-    fill:#fff; 
-    width:70%
+    min-height:12rem;
 }
 
 /* extraer de button estas props */
@@ -223,7 +220,7 @@ footer {
 .logo-nav-icons-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     gap:1rem;
     width: 10%;
   
@@ -232,7 +229,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
+    gap: 1rem;
 }
 .nav-links{
     display: flex;
@@ -241,34 +239,40 @@ footer {
     align-items:start ;
     gap: 1rem;
 }
-
-footer nav{
-    padding-top: 1.5rem;
+.footer-nav-container{
+    justify-content: space-around;
+    width: 66%;
 }
+/* footer nav{
+    padding-top: 1.5rem;
+} */
 .form-credits-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 22%;
+    width: 30%;
 }
 form{
     display: flex;
-    gap: 1rem;
-   justify-content: end;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: end;
 }
 form input{
-    width: 70%;
+    min-width: 70%;
     padding: 0.625rem;
     border-radius: 3.125rem;
     text-align: start;
     border: none;
 }
-.form-credits-container span{
-    display: flex;
+footer p{
     font-size: 0.78rem;
     color: #8C8C94;
     font-weight: 400;
-    align-self: end;
+    text-align: right;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
 }
 @media screen and (max-width: 480px)  {
     .header {
@@ -287,13 +291,24 @@ form input{
         flex-direction: column;
         margin-top: 50px;
     }
-    .article-argument {
+    .article-argument , .article-call-action{
         background: #3CDDF3;
         flex-direction: column;
         gap: 50px;
     }
+    .call-action-title{
+        width: 100%;
+        text-align: center;
+    }
+   
     .article-argument * {
         width: 100%;
+    }
+    .call-action-button{
+        background: #232C50;
+    }
+    .call-action-button a{
+        color: #FFF;
     }
     .card:nth-child(1), .card:nth-child(3)  {
         display: none;
@@ -301,5 +316,48 @@ form input{
     .article-best {
         padding-bottom: 5rem ;
         margin: 1rem;
+    }
+    .motives-section{
+        flex-direction: column;
+    }
+    .motives-article, .motives-heading{
+        width: 100%;
+    }
+    .motives-heading{
+        background: rgba(139, 72, 191, 0.30); 
+        border-radius: 40px 0 0 40px;
+    }
+    .motives-article p{
+        align-self: center;
+    }
+    footer{
+        padding: 2.5rem 4rem;
+        gap: 1rem;
+    }
+    .footer-container{
+        flex-direction: column-reverse;
+        gap:3rem;
+    }
+    .form-credits-container, .footer-nav-container, .logo-nav-icons-container{
+        width: 100%;
+    }
+    .footer-nav-container{
+        justify-content: space-around;
+    }
+    footer  p{
+        text-align: center;
+        padding: 2rem;
+    }
+    .logo-nav-icons-container{
+        padding: 1rem;
+        align-items: center;
+        gap: 2.5rem;
+    }
+    .logo-nav-icons-container img{
+        order: 1;
+        padding: 1rem;
+    }
+    form input{
+        width: 90%;
     }
 }
