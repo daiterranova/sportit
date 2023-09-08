@@ -95,7 +95,7 @@ button:hover {
     width: 134px;
 }
 .button-small {
-    width: 63px;
+    min-width: 63px;
 }
 
 .article-call-action {
@@ -196,18 +196,10 @@ button:hover {
 /* footer */
 
 footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
+    padding: 3rem 8rem;
     background:#1E1E26 ;
     color: #8C8C94;
-    height:12rem;
-
-}
-/* revisar cambiar color svg logo footer */
-.logo-nav-icons-container img{
-    fill:#fff; 
-    width:70%
+    min-height:12rem;
 }
 
 /* extraer de button estas props */
@@ -228,7 +220,7 @@ footer {
 .logo-nav-icons-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     gap:1rem;
     width: 10%;
   
@@ -237,7 +229,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
+    gap: 1rem;
 }
 .nav-links{
     display: flex;
@@ -246,34 +239,40 @@ footer {
     align-items:start ;
     gap: 1rem;
 }
-
-footer nav{
-    padding-top: 1.5rem;
+.footer-nav-container{
+    justify-content: space-around;
+    width: 66%;
 }
+/* footer nav{
+    padding-top: 1.5rem;
+} */
 .form-credits-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 22%;
+    width: 30%;
 }
 form{
     display: flex;
-    gap: 1rem;
-   justify-content: end;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: end;
 }
 form input{
-    width: 70%;
+    min-width: 70%;
     padding: 0.625rem;
     border-radius: 3.125rem;
     text-align: start;
     border: none;
 }
-.form-credits-container span{
-    display: flex;
+footer p{
     font-size: 0.78rem;
     color: #8C8C94;
     font-weight: 400;
-    align-self: end;
+    text-align: right;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
 }
 @media screen and (max-width: 480px)  {
     .header {
@@ -330,5 +329,35 @@ form input{
     }
     .motives-article p{
         align-self: center;
+    }
+    footer{
+        padding: 2.5rem 4rem;
+        gap: 1rem;
+    }
+    .footer-container{
+        flex-direction: column-reverse;
+        gap:3rem;
+    }
+    .form-credits-container, .footer-nav-container, .logo-nav-icons-container{
+        width: 100%;
+    }
+    .footer-nav-container{
+        justify-content: space-around;
+    }
+    footer  p{
+        text-align: center;
+        padding: 2rem;
+    }
+    .logo-nav-icons-container{
+        padding: 1rem;
+        align-items: center;
+        gap: 2.5rem;
+    }
+    .logo-nav-icons-container img{
+        order: 1;
+        padding: 1rem;
+    }
+    form input{
+        width: 90%;
     }
 }
