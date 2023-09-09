@@ -149,30 +149,6 @@ button:active {
     color: #323851;
 }
 
-/* Article call action */
-.article-call-action {
-    width: 100%;
-    background: #8b48bf;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2rem;
-}
-.call-action-title {
-    color: #ffffff;
-    width: 35%;
-    font-size: 2.5rem;
-}
-.call-action-button {
-    background: #ffffff;
-}
-.call-action-button a {
-    text-decoration: none;
-    color: #8b48bf;
-}
-.call-action-button:hover{
-    background: hsla(0, 0%, 98%,0.9);
-}
-
 /* Article best */
 .article-best {
     text-align: center;
@@ -198,6 +174,30 @@ button:active {
 .card p {
     padding: 1.6rem;
     color: #B9B9C1;
+}
+
+/* Article call action */
+.article-call-action {
+    width: 100%;
+    background: #8b48bf;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.call-action-title {
+    color: #ffffff;
+    width: 35%;
+    font-size: 2.5rem;
+}
+.call-action-button {
+    background: #ffffff;
+}
+.call-action-button a {
+    text-decoration: none;
+    color: #8b48bf;
+}
+.call-action-button:hover{
+    background: hsla(0, 0%, 98%,0.9);
 }
 
 /* footer */
