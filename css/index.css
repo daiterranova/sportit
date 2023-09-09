@@ -23,7 +23,7 @@ button {
     border: none;
     padding: 0.625rem;
     border-radius: 50px;
-    height: 44px;
+    height: 2.75rem;
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
     transition: all 0.2s ;
 }
@@ -37,10 +37,10 @@ button:active {
     box-shadow: none; /* Remove the shadow on click */
 }
 .button-regular {
-    width: 134px;
+    width: 8.3rem;
 }
 .button-small {
-    min-width: 63px;
+    min-width: 4rem;
 }
 /* Header */
 .header {
@@ -51,7 +51,7 @@ button:active {
     align-items: center;
 }
 .nav-menu li {
-    margin: 0 10px;
+    margin: 0 0.62rem;
     list-style: none;
 }
 .nav-menu a {
@@ -93,7 +93,7 @@ button:active {
     align-items: flex-end;
     text-align: right;
     gap: 2rem;
-    max-width: 450px;
+    max-width: 28.1rem;
 }
 
 /* Article argument */
@@ -105,7 +105,7 @@ button:active {
     padding: 2.5rem 1rem;
 }
 .article-argument * {
-    width: 450px;
+    width: 28.1rem;
 }
 .article-argument p {
     line-height: 1.75rem;
@@ -137,16 +137,19 @@ button:active {
     border-radius: 3.125rem;
 }
 .motives-article p{
-   align-self: end;
-   width:68%;
-   color: #B3B2B7;
-   font-weight: 400;
-   font-size: 0.98rem;
-
+    align-self: end;
+    width:68%;
+    color: #B3B2B7;
+    font-weight: 400;
+    font-size: 0.98rem;
+    
 }
 .motives-title{
     font-weight: 700;
     color: #323851;
+}
+.slide-left {
+    animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* Article best */
@@ -163,13 +166,13 @@ button:active {
 }
 .card {
     flex-direction: column;
-    width: 450px;
+    width: 28.1rem;
     background-color: #fafafa;
     margin-bottom: 4rem;
 }
 .card img {
     position: relative;
-    top: -35px;
+    top: -2.2rem;
 }
 .card p {
     padding: 1.6rem;
@@ -242,7 +245,7 @@ footer {
     justify-content: space-around;
     width: 66%;
 }
-.form-credits-container{
+.form-container{
     flex-direction: column;
     width: 30%;
 }
@@ -270,6 +273,14 @@ footer p{
 .footer-container{
     justify-content: space-between;
 }
+@keyframes slide-left {
+  0% {
+      transform: translateX(480px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
 @media screen and (max-width: 480px)  {
     .header {
         padding: 2.5em;
@@ -285,13 +296,13 @@ footer p{
     }
     .hero-section {
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 3.1rem;
         gap: 2rem
     }
     .article-argument , .article-call-action{
         background: #3CDDF3;
         flex-direction: column;
-        gap: 50px;
+        gap: 3.1rem;
     }
     .call-action-title{
         width: 100%;
@@ -316,13 +327,14 @@ footer p{
     }
     .motives-section{
         flex-direction: column;
+        background-color: #FFF;
     }
     .motives-article, .motives-heading{
         width: 100%;
     }
     .motives-heading{
         background: rgba(139, 72, 191, 0.30); 
-        border-radius: 40px 0 0 40px;
+        border-radius: 2.5rem 0 0 2.5rem;
     }
     .motives-article p{
         align-self: center;
@@ -335,7 +347,7 @@ footer p{
         flex-direction: column-reverse;
         gap:3rem;
     }
-    .form-credits-container, .footer-nav-container, .logo-nav-icons-container{
+    .form-container, .footer-nav-container, .logo-nav-icons-container{
         width: 100%;
     }
     .footer-nav-container{
