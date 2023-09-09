@@ -14,12 +14,39 @@ h1 {
 h2 {
     font-size: 2.15rem;
 }
+.flex {
+    display: flex;
+}
+button {
+    background-color: #8b48bf;
+    color: #FFF;
+    border: none;
+    padding: 0.625rem;
+    border-radius: 50px;
+    height: 44px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ;
+}
+button:hover {
+    cursor: pointer;
+    background: rgba(139, 72, 191, 0.70);
+    transform: translateY(-4px);
+}
+button:active {
+    transform: scale(0.95); /* Decrease size by 5% when clicked */
+    box-shadow: none; /* Remove the shadow on click */
+}
+.button-regular {
+    width: 134px;
+}
+.button-small {
+    min-width: 63px;
+}
 /* Header */
 .header {
     padding: 3em;
 }
 .header-nav {
-    display: flex;
     justify-content: space-around;
     align-items: center;
 }
@@ -48,17 +75,13 @@ h2 {
 .nav-menu a:hover::after {
     opacity: 1;
 }
-.nav-menu {
-    display: flex;
-}
 .nav-menu-mobile {
     display: none;
 }
-/* End Header */
+
 /* Hero section */
 .hero-section {
-    margin: 100px 10%;
-    display: flex;
+    margin: 6rem 10%;
     justify-content: space-around;
     align-items:center;
 }
@@ -66,21 +89,19 @@ h2 {
     width: 100%;
 }
 .hero-section-text {
-    display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    gap: 28px;
+    gap: 2rem;
     max-width: 450px;
 }
-/* End hero section */
+
 /* Article argument */
 .article-argument {
-    display: flex;
     justify-content: center;
     background: #8B48BF;
     color: #FFF;
-    gap: 100px;
+    gap: 6rem;
     padding: 2.5rem 1rem;
 }
 .article-argument * {
@@ -89,94 +110,10 @@ h2 {
 .article-argument p {
     line-height: 1.75rem;
 }
-.flex {
-    display: flex;
-}
-button {
-    background-color: #8b48bf;
-    color: #FFF;
-    border: none;
-    padding: 0.625rem;
-    border-radius: 50px;
-    height: 44px;
-    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
-    transition: all 0.2s ;
-   
-   
-}
-button:hover {
-    cursor: pointer;
-    background: rgba(139, 72, 191, 0.70);
-    transform: translateY(-4px);
-}
-button:active {
-    transform: scale(0.95); /* Decrease size by 5% when clicked */
-    box-shadow: none; /* Remove the shadow on click */
-}
-.button-regular {
-    width: 134px;
-}
-.button-small {
-    min-width: 63px;
-}
 
-.article-call-action {
-    width: 100%;
-    background: #8b48bf;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2rem;
-}
-.call-action-title {
-    color: #ffffff;
-    width: 35%;
-    font-size: 2.5rem;
-}
-.call-action-button {
-    background: #ffffff;
-}
-.call-action-button a {
-    text-decoration: none;
-    color: #8b48bf;
-}
-.call-action-button:hover{
-    background: hsla(0, 0%, 98%,0.9);
-
-}
-/* Article best */
-.article-best {
-    text-align: center;
-    padding-bottom:12rem ;
-}
-.article-best h2 {
-    padding: 6rem 1rem;
-}
-.cards-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.card {
-    display: flex;
-    flex-direction: column;
-    width: 450px;
-    background-color: #fafafa;
-    margin-bottom: 4rem;
-}
-.card img {
-    position: relative;
-    top: -35px;
-}
-.card p {
-    padding: 1.6rem;
-    color: #B9B9C1;
-}
-/* end article best */
 /* Motives section */
 .motives-section{
     background: #FAFAFA;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -186,15 +123,12 @@ button:active {
 }
 .motives-article{
     width: 35%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.1rem;
-    /* padding-left: 1rem; */
 }
 .motives-heading{
-    display: flex;
     align-items: center;
     gap:1rem;
 }
@@ -215,15 +149,64 @@ button:active {
     color: #323851;
 }
 
-/* footer */
+/* Article best */
+.article-best {
+    text-align: center;
+    padding-bottom:12rem ;
+}
+.article-best h2 {
+    padding: 6rem 1rem;
+}
+.cards-section {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    flex-direction: column;
+    width: 450px;
+    background-color: #fafafa;
+    margin-bottom: 4rem;
+}
+.card img {
+    position: relative;
+    top: -35px;
+}
+.card p {
+    padding: 1.6rem;
+    color: #B9B9C1;
+}
 
+/* Article call action */
+.article-call-action {
+    width: 100%;
+    background: #8b48bf;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.call-action-title {
+    color: #ffffff;
+    width: 35%;
+    font-size: 2.5rem;
+}
+.call-action-button {
+    background: #ffffff;
+}
+.call-action-button a {
+    text-decoration: none;
+    color: #8b48bf;
+}
+.call-action-button:hover{
+    background: hsla(0, 0%, 98%,0.9);
+}
+
+/* footer */
 footer {
     padding: 3rem 8rem;
     background:#1E1E26 ;
     color: #8C8C94;
     min-height:12rem;
 }
-
 .primary{
     background-color: #8b48bf;
     color: #FFF;
@@ -231,7 +214,6 @@ footer {
 .footer-nav {
     list-style:none;
     padding: 0;
-    /* margin: 0; */
 }
 .footer-nav a{
     text-decoration: none;
@@ -239,22 +221,18 @@ footer {
     font-weight: 300;
 }
 .logo-nav-icons-container{
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap:1rem;
     width: 10%;
-  
 }
 .nav-icons{
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     gap: 1rem;
 }
 .nav-links{
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items:start ;
@@ -265,12 +243,10 @@ footer {
     width: 66%;
 }
 .form-credits-container{
-    display: flex;
     flex-direction: column;
     width: 30%;
 }
 form{
-    display: flex;
     gap: 0.5rem;
     width: 100%;
     justify-content: end;
@@ -292,7 +268,6 @@ footer p{
     text-align: right;
 }
 .footer-container{
-    display: flex;
     justify-content: space-between;
 }
 @media screen and (max-width: 480px)  {
@@ -306,11 +281,12 @@ footer p{
         display: none;
     }
     .nav-menu-mobile {
-        display:inherit;
+        display: inherit;
     }
     .hero-section {
         flex-direction: column;
         margin-top: 50px;
+        gap: 2rem
     }
     .article-argument , .article-call-action{
         background: #3CDDF3;
